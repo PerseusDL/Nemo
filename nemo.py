@@ -28,7 +28,7 @@ nemo = Nemo(
     ],
     transform={
         "urn:cts:froLit:jns915.jns1856.ciham-fro1" : "static/ciham.xslt"
-    }
+    },
     # We give thee ap object
     #app=app
     chunker={
