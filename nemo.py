@@ -44,4 +44,4 @@ nemo.init_app(app)
 nemo.register_routes()
 # We register its filters
 nemo.register_filters()
-# app.debug = True
+app.debug = True
