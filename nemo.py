@@ -18,7 +18,7 @@ nemo = Nemo(
     # In our case, we have an inventory named "nemo"
     inventory="nemo",
     css=[
-            # USE Own CSS
+            # USE Own CSS Files
             "static/tei.pb.min.css",
             "static/ciham.css"
     ],
