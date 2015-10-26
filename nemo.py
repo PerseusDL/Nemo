@@ -16,7 +16,7 @@ nemo = Nemo(
     base_url="",
     name="nemo",
     # In our case, we have an inventory named "nemo"
-    inventory="nemo",
+    inventory="small",
     css=[
             # USE Own CSS Files
             "static/tei.pb.min.css",
