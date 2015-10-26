@@ -1,1 +1,1 @@
-web: gunicorn nemo:app --log-file=- --timeout 60
+web: waitress-serve --port=$PORT nemo:app

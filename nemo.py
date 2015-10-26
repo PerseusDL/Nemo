@@ -16,7 +16,7 @@ nemo = Nemo(
     base_url="",
     name="nemo",
     # In our case, we have an inventory named "nemo"
-    inventory="small",
+    inventory="nemo",
     css=[
             # USE Own CSS Files
             "static/tei.pb.min.css",
@@ -44,4 +44,4 @@ nemo.init_app(app)
 nemo.register_routes()
 # We register its filters
 nemo.register_filters()
-app.debug = True
+#app.debug = True
