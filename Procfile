@@ -1,1 +1,1 @@
-web: gunicorn nemo:app --log-file=-
+web: gunicorn nemo:app --log-file=- --preload
