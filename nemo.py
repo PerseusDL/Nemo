@@ -29,6 +29,10 @@ nemo = Nemo(
     transform={
         "urn:cts:froLit:jns915.jns1856.ciham-fro1" : "static/ciham.xslt"
     },
+    urntransform= {
+          "default": lambda urn: "<a href='http://www.perseids.org/apps/treebank?text_uri=http://perseids.org/cts5/nemo/citations/" + urn + "' target='_blank'>Create Treebank</a>"
+    },
+
     # We give thee ap object
     #app=app
     chunker={
@@ -44,4 +48,4 @@ nemo.init_app(app)
 nemo.register_routes()
 # We register its filters
 nemo.register_filters()
-#app.debug = True
+app.debug = True
