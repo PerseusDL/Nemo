@@ -37,6 +37,7 @@ nemo = Nemo(
         # but it would be cool to have 30 lines group for Nemo
         "urn:cts:latinLit:phi0959.phi005.perseus-lat2": lambda version, callback: Nemo.line_chunker(version, callback, lines=30),
         "urn:cts:froLit:jns915.jns1856.ciham-fro1": lambda text, cb: [(reff.split(":")[-1], reff.split(":")[-1]) for reff in cb(1)],
+        "urn:cts:latinLit:phi1002.phi001.perseus-lat2": lambda text, getLevel: [(reff.split(":")[-1], reff.split(":")[-1]) for reff in getLevel(2)],
         "default": Nemo.scheme_chunker  # lambda text, cb: Nemo.line_grouper(text, cb, 50),
     }, 
 
