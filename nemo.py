@@ -38,6 +38,7 @@ nemo = Nemo(
         "urn:cts:latinLit:phi0959.phi005.perseus-lat2": lambda version, callback: Nemo.line_chunker(version, callback, lines=30),
         "urn:cts:froLit:jns915.jns1856.ciham-fro1": lambda text, getLevel: [(reff.split(":")[-1], reff.split(":")[-1]) for reff in getLevel(1)],
         "urn:cts:latinLit:phi0472.phi001.perseus-lat2": lambda text, getLevel: [(reff.split(":")[-1], reff.split(":")[-1]) for reff in getLevel(1)],
+        "urn:cts:latinLit:phi1212.phi002.perseus-lat1": lambda version, callback: Nemo.line_chunker(version, callback, lines=5), #Apuleius, Metamorphoses, 5 sections at a time
         "default": Nemo.scheme_chunker  # lambda text, cb: Nemo.line_grouper(text, cb, 50),
     }, 
 
