@@ -1,5 +1,5 @@
 Flask==0.10.1
-git+git://github.com/Capitains/flask-capitains-nemo
+-e git+https://github.com/Capitains/flask-capitains-nemo.git@0.0.2dev
 future==0.15.2
 gunicorn==19.3.0
 itsdangerous==0.24
