@@ -2,7 +2,7 @@ Flask==0.10.1
 MyCapytain==0.1.1
 -e git+https://github.com/Capitains/flask-capitains-nemo.git@css-issues#egg=flask_nemo
 future==0.15.2
-gunicorn==19.3.0
+gunicorn>=22.0.0
 itsdangerous==0.24
 Jinja2==2.8
 lxml==3.4.4
